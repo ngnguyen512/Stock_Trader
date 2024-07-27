@@ -13,13 +13,13 @@ import uuid
 from td.client import TDClient
 from td.orders import Order, OrderLeg
 
-conn = psycopg2.connect("host=45.77.120.179 dbname=other user=other password=oDyK7fGjwqY6D")
-u = 'https://api.apify.com/v2/actor-tasks/coryrwest~nasdaq-earnings-calendar/run-sync-get-dataset-items?token=W4GwNpKcdLvgCQkWwSw7T6FBA'
+conn = psycopg2.connect("")
+u = ''
 
-stockPriceUrl = 'https://realstonks.p.rapidapi.com/'
-tdClientId = 'LNIU6W7CH8GZCUIS9ZZRBLYGIIGCH2EW'
-tdRedirect = 'https://invest.crwest.com/oauth'
-tdCredentialsFile = 'ameritrade-credentials.json'
+stockPriceUrl = ''
+tdClientId = ''
+tdRedirect = ''
+tdCredentialsFile = ''
 
 logger = logging.getLogger(__name__)
 log_group = '/stock-trader/etrade-log'
