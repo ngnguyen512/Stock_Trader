@@ -15,9 +15,9 @@ import re
 from bs4 import BeautifulSoup
 
 # Setup
-conn = psycopg2.connect("host=45.77.120.179 dbname=other user=other password=oDyK7fGjwqY6D")
+conn = psycopg2.connect("")
 
-alphaVantageApi = 'ORL7L6P47R2DYAS3'
+alphaVantageApi = ''
 stockPriceUrl = 'https://realstonks.p.rapidapi.com/'
 avEarningsCalendar = f'https://www.alphavantage.co/query?function=EARNINGS_CALENDAR&horizon=3month&apikey={alphaVantageApi}'
 listingStatusUrl = f'https://www.alphavantage.co/query?function=LISTING_STATUS&apikey={alphaVantageApi}'
