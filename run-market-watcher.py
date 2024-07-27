@@ -15,10 +15,10 @@ import re
 from bs4 import BeautifulSoup
 
 # Setup
-conn = psycopg2.connect("host=45.77.120.179 dbname=other user=other password=F3X3q7h8irUK")
-u = 'https://api.apify.com/v2/actor-tasks/coryrwest~nasdaq-earnings-calendar/run-sync-get-dataset-items?token=W4GwNpKcdLvgCQkWwSw7T6FBA'
+conn = psycopg2.connect("")
+u = 
 
-alphaVantageApi = 'ORL7L6P47R2DYAS3'
+alphaVantageApi = ''
 stockPriceUrl = 'https://realstonks.p.rapidapi.com/'
 avEarningsCalendar = f'https://www.alphavantage.co/query?function=EARNINGS_CALENDAR&horizon=3month&apikey={alphaVantageApi}'
 listingStatusUrl = f'https://www.alphavantage.co/query?function=LISTING_STATUS&apikey={alphaVantageApi}'
@@ -28,9 +28,9 @@ log_group = '/stock-trader/market-watch'
 version = 1
 eps_delta = 0.2
 # emails
-key = '5c4f096a0a971f0b09d89ce737bca4b8-c3d1d1eb-71534a86'
-sandbox = 'mailer.crwest.com'
-recipient = 'cw@crwest.com'
+key = ''
+sandbox = ''
+recipient = '
 
 def parse_date(dateString):
     return datetime.strptime(dateString, '%Y-%m-%d')
@@ -235,9 +235,9 @@ def log_event(message, stream_name, seq_token):
 def send_email(message, file):
     request_url = 'https://api.mailgun.net/v2/{0}/messages'.format(sandbox)
     return requests.post(request_url, auth=('api', key), data={
-        'from': 'postmaster@mailer.crwest.com',
-        'to': 'westropp@gmail.com',
-        'subject': 'Daily Earnings Deltas',
+        'from': '',
+        'to': '',
+        'subject': '',
         'text': message,
         },
         files=[("attachment", file)],
