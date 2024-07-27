@@ -10,9 +10,9 @@ from os.path import exists
 import pandas as pd
 
 DEBUG = False
-apikey = 'SWJCT9RBZM8S1KBE'
-apikey2 = '0CYPLFS28TMF2YXY'
-apikey3 = '1CZB8UJLQ55F6L1A'
+apikey = ''
+apikey2 = ''
+apikey3 = ''
 simpleMovingAverageUrl = f'https://www.alphavantage.co/query?function=SMA&interval=weekly&time_period=52&series_type=open&symbol={{0}}&apikey={{1}}'
 earningsCalendarUrl = f'https://www.alphavantage.co/query?function=EARNINGS_CALENDAR&horizon=3month&apikey={{1}}'
 stockPriceUrl = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=full&symbol={{0}}&apikey={{1}}'
