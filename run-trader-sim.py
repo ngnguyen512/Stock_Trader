@@ -15,13 +15,13 @@ import re
 from bs4 import BeautifulSoup
 
 # Setup
-conn = psycopg2.connect("host=45.77.120.179 dbname=other user=other password=F3X3q7h8irUK")
-u = 'https://api.apify.com/v2/actor-tasks/coryrwest~nasdaq-earnings-calendar/run-sync-get-dataset-items?token=W4GwNpKcdLvgCQkWwSw7T6FBA'
+conn = psycopg2.connect("")
+u = ''
 
-alphaVantageApi = 'ORL7L6P47R2DYAS3'
-stockPriceUrl = 'https://realstonks.p.rapidapi.com/'
-avEarningsCalendar = f'https://www.alphavantage.co/query?function=EARNINGS_CALENDAR&horizon=3month&apikey={alphaVantageApi}'
-listingStatusUrl = f'https://www.alphavantage.co/query?function=LISTING_STATUS&apikey={alphaVantageApi}'
+alphaVantageApi = ''
+stockPriceUrl = ''
+avEarningsCalendar = f''
+listingStatusUrl = f''
 
 logger = logging.getLogger(__name__)
 log_group = '/stock-trader/sim'
@@ -29,9 +29,9 @@ version = 43
 cohort_start = '12/18/23'
 price_cutoff = 25
 # emails
-key = '5c4f096a0a971f0b09d89ce737bca4b8-c3d1d1eb-71534a86'
-sandbox = 'mailer.crwest.com'
-recipient = 'cw@crwest.com'
+key = ''
+sandbox = ''
+recipient = ''
 
 def parse_date(dateString):
     return datetime.strptime(dateString, '%Y-%m-%d')
