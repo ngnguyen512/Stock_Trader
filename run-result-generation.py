@@ -16,7 +16,7 @@ import psycopg2
 import psycopg2.extras
 import re
 
-conn = psycopg2.connect("host=45.77.120.179 dbname=other user=other password=F3X3q7h8irUK")
+conn = psycopg2.connect("")
 resultColumns = ['symbol', 'event', 'year', 'purchaseDate', 'sellDate',
                  'estimatedEPSThisYear', 'actualEPSLastYear',
                  'purchasePrice', 'sellPrice', 'thirtyDayVol', 'sma',
