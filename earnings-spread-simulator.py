@@ -22,7 +22,7 @@ def formatDate(date):
     return datetime.strftime(date, '%Y-%m-%d')
 
 
-conn = psycopg2.connect("host=45.77.120.179 dbname=other user=other password=oDyK7fGjwqY6D")
+conn = psycopg2.connect("")
 columns = ['id', 'symbol', 'purchaseDate', 'purchasePrice', 'sellDate', 'sellPrice', 'shares']
 
 # PARAMETERS
