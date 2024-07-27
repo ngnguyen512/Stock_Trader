@@ -3,12 +3,12 @@ import boto3
 import datetime
 
 log_group = '/stock-trader/sim'
-AWS_REGION = "us-west-2"
+AWS_REGION = ""
 client = boto3.client('logs', region_name=AWS_REGION)
 
-key = '5c4f096a0a971f0b09d89ce737bca4b8-c3d1d1eb-71534a86'
-sandbox = 'mailer.crwest.com'
-recipient = 'cw@crwest.com'
+key = ''
+sandbox = ''
+recipient = ''
 
 
 def format_date(date):
