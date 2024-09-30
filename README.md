@@ -1,1 +1,18 @@
 # Stock_Trader
+- Check every listed stock on the NYSE and NASDAQ exchanges every day.
+- For all stocks, get the following data:
+  - Last Year EPS for the complimentary quarter to this year's current quarter
+  - Current quarter EPS estimate
+  - Current quarter number of estimates
+  - Last stock price (open, close, last doesn't matter)
+  - Next earnings date
+  - Last quarter earnings date
+- For all the stocks that meet our criteria, buy them at the beginning of the day:
+  - Stock price over $25
+  - Year-over-year EPS delta of more than 20%
+  - More than 5 estimates
+  - Not current holding that stock
+  - We have not traded this stock already this quarter (this is important, we only trade a symbol once per quarter)
+- Every 15 minutes, check the stocks we are holding:
+  - If the stock has gained 3.5% in value, sell it
+  - If the stock has been held for 10 days, sell it
